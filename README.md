@@ -38,6 +38,33 @@ GUBAD-code/
    - Trains a Random Forest classifier (100 trees, `minLeafPopulation=5`) per city
    - Classifies ISA and applies a mode filter (`Kernel.square(1.5)`)
    - Exports results to Google Drive as 30 m (2000–2015) or 10 m (2020–2025) GeoTIFFs
+3. `batch_ISA_to_builtup_constraint.py` — Batch conversion and refinement of city-level built-up areas:
+   - Loads impervious surface / built-up area shapefiles and administrative boundaries
+   - Identifies intersecting administrative districts and allows users to select valid city extents
+   - Clips built-up area polygons by selected administrative boundaries
+   - Removes small fragmented patches smaller than 10,000 m² and recalculates built-up area
+   - Applies optional temporal consistency constraints across multiple years
+      ▪ Manual constraint mode
+      ▪ Sequential year-by-year constraint mode
+      ▪ No-constraint copy mode
+   - Exports intermediate and final city-level built-up area shapefiles with standardized filenames
+   - Saves user selections and completion markers to support breakpoint continuation
+4. `batch_apply_manual_kml_patches.py` — Batch refinement of built-up area results using manually interpreted KML files:
+   - Loads constrained built-up area shapefiles and Google Earth-based manual KML corrections
+   - Adds missing built-up areas from `_bu.kml` files
+   - Removes false built-up areas using `_cai.kml` files
+   - Automatically matches correction files by city and year
+   - Recalculates built-up area and cleans attribute fields
+   - Exports final patched shapefiles with standardized names
+   - Logs processing information and reports years with unexpected area decreases
+5. `batch_remove_water_from_builtup.py` — Batch water-body removal from corrected built-up area results:
+   - Loads checked and manually corrected built-up area shapefiles
+   - Loads and dissolves provincial water-body polygon datasets
+   - Automatically matches each city to the corresponding provincial water mask
+   - Removes water-covered areas from built-up polygons using spatial difference
+   - Repairs geometries and removes empty results
+   - Recalculates built-up area after water removal
+   - Exports final city-year shapefiles with standardized names
 
 **Dependencies:**
 - Python 3.8+
