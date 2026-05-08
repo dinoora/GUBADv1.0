@@ -71,7 +71,9 @@ python3 ee_get_ISAs.py /path/to/boundaries/*/* /path/to/output -y -m 1
 
 ##  3. C++ (main_IS_filter.cpp, defs.h)
 **Purpose:** Enforce temporal consistency across ISA epochs using GPU-accelerated isotonic regression (PAVA).
+
 **Implementation:**
+
     - Reads 6 epoch TIFFs per city (GDAL API)
     - Applies the Pool-Adjacent-Violators Algorithm (PAVA) at the pixel level
     - Ensures non-decreasing impervious-surface trends from 2000 → 2025
@@ -79,6 +81,7 @@ python3 ee_get_ISAs.py /path/to/boundaries/*/* /path/to/output -y -m 1
     - CUDA-accelerated for global-scale throughput
     
 **Dependencies:**
+
     - GDAL (≥ 2.4)
     - CUDA Toolkit
     - CImg (for TIFF I/O)
