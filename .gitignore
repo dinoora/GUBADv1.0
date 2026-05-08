@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.tif
+*.img
+*.hdf
+*.zip
+
+data/raw/
+outputs/
+
+.env
