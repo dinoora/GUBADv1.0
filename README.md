@@ -12,8 +12,11 @@ This repository contains the production code for the **Global Urban Built-up Are
 
 ## Repository Structure
 GUBAD-code/
-├── Python/          # Google Earth Engine (GEE) extraction workflows
+
+├── Python/ # Google Earth Engine (GEE) extraction workflows
+
 ├── Shell/           # Batch orchestration and pipeline scripts
+
 └── cpp/             # Post-processing and temporal filtering (CUDA/GDAL)
 
 ---
