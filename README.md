@@ -68,7 +68,9 @@ python3 ee_get_ISAs.py /path/to/boundaries/*/* /path/to/output -y -m 1
 
 **Directory convention:**
 31_ISA/
+
 ├── L0/   # Raw ISA exports from GEE
+
 └── L1/   # Temporally filtered ISA (output of cpp binary)
 
 
