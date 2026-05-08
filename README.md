@@ -68,6 +68,7 @@ python3 ee_get_ISAs.py /path/to/boundaries/*/* /path/to/output -y -m 1
 ├── L0/   # Raw ISA exports from GEE
 └── L1/   # Temporally filtered ISA (output of cpp binary)
 
+
 ##  3. C++ (main_IS_filter.cpp, defs.h)
 **Purpose:** Enforce temporal consistency across ISA epochs using GPU-accelerated isotonic regression (PAVA).
 **Implementation:**
@@ -76,6 +77,7 @@ python3 ee_get_ISAs.py /path/to/boundaries/*/* /path/to/output -y -m 1
     - Ensures non-decreasing impervious-surface trends from 2000 → 2025
     - Suppresses noise-induced temporal "spikes" without enforcing artificial growth
     - CUDA-accelerated for global-scale throughput
+    
 **Dependencies:**
     - GDAL (≥ 2.4)
     - CUDA Toolkit
