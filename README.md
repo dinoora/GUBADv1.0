@@ -4,9 +4,10 @@
 
 This repository contains the production code for the **Global Urban Built-up Area Dataset (GUBAD)**, a multi-epoch dataset of urban built-up areas (UBA) for 1,611 global cities with populations exceeding 300,000 (2000–2025).
 
-&gt; **Manuscript status:** Code accompanying the manuscript *"A Global Urban Built-up Area Dataset for Cities with Populations Exceeding 300,000 (2000–2025)"* (submitted to *Earth System Science Data*).
+&gt; **Manuscript status:** Code accompanying the manuscript *"A Global Urban Built-up Area Dataset for Cities with Populations Exceeding 300,000 (2000–2025)"*.
 &gt; 
-&gt; **Dataset:** The GUBAD data product (vector shapefiles, supplementary tables, and metadata) is available separately on Zenodo: `https://doi.org/10.5281/zenodo.20051123` (to be updated upon publication).
+
+&gt; **Dataset:** The GUBAD data product (vector shapefiles, supplementary tables, and metadata) is available separately on Zenodo: `https://doi.org/10.5281/zenodo.20051123`.
 
 ---
 
