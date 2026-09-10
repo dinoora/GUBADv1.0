@@ -2,10 +2,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository contains the production code for the **Global Urban Built-up Area Dataset (GUBAD)**, a multi-epoch dataset of urban built-up areas (UBA) for 1,611 global cities where the populations exceed 300,000 from the 2000 to 2025 time periods.
-
-&gt; **Dataset:** The GUBAD data product (vector shapefiles, supplementary tables, and metadata) is available separately on Zenodo: `https://doi.org/10.5281/zenodo.20051123`.
-
 ---
 
 ## Repository Structure
