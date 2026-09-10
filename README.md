@@ -1,4 +1,4 @@
-# GUBAD: Global Urban Built-up Area Dataset — Processing Code
+# GUBAD — Processing Code
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
